@@ -114,5 +114,5 @@ client.connect(err => {
 app.get('/', (req, res) => {
     res.send("server is running")
 })
-const port = process.env.PORT;
-app.listen(port)
+const port = 5000;
+app.listen(process.env.PORT || port)
